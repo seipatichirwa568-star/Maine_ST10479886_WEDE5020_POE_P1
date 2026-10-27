@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".gallery-item").forEach(
       function (button) {
         button.addEventListener("click", function () {
-          largeImage.src = button.dataset.image;
+          largeImage.src = button.querySelector("img").src;
           largeImage.alt = button.dataset.caption;
           caption.textContent = button.dataset.caption;
           lightbox.showModal();
