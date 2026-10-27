@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bracelet Enquiries | Skull Bracelets</title>
+    <meta name="description" content="Request information about Skull Bracelets products, quantities and estimated costs using an interactive validated enquiry form.">
+    <meta name="keywords" content="skull bracelet enquiry, bracelet quote, ask about skull bracelets">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">
+                💀 Skull <span>Bracelets</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    type="button" aria-controls="site-nav"
+                    aria-expanded="false">Menu ☰</button>
+
+            <nav class="site-nav" id="site-nav"
+                 aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Bracelets</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enquiry.html" aria-current="page">Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-intro">
+            <p class="eyebrow">Product enquiries</p>
+            <h1>Ask about a bracelet</h1>
+
+            <p class="lead content-width">
+                Select a design and quantity to calculate an
+                estimated product total. We will need to confirm
+                stock, delivery and final prices.
+            </p>
+        </section>
+
+        <section class="section contact-grid">
+            <aside class="panel">
+                <h2>How it works</h2>
+
+                <p>1. Choose a bracelet and quantity.</p>
+                <p>2. See the estimated product cost.</p>
+                <p>3. Complete your contact details.</p>
+                <p>4. Submit on the published Netlify website.</p>
+
+                <p class="small-note">
+                    The estimate is not an invoice and does
+                    not reserve stock.
+                </p>
+            </aside>
+
+            <div class="panel">
+                <h2>Product enquiry form</h2>
+
+                <form id="enquiry-form"
+                      class="netlify-form"
+                      name="enquiry"
+                      method="POST"
+                      action="/"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                      novalidate>
+
+                    <input type="hidden" name="form-name"
+                           value="enquiry">
+
+                    <p class="hidden">
+                        <label>
+                            Leave this field blank
+                            <input name="bot-field"
+                                   tabindex="-1" autocomplete="off">
+                        </label>
+                    </p>
+
+                    <div class="field">
+                        <label for="enquiry-name">Full name *</label>
+                        <input id="enquiry-name" name="full-name"
+                               type="text" autocomplete="name"
+                               required minlength="2" maxlength="70"
+                               placeholder="Your full name">
+                        <small id="error-enquiry-name"
+                               class="field-error"
+                               data-error-for="enquiry-name"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="enquiry-email">Email address *</label>
+                        <input id="enquiry-email" name="email"
+                               type="email" autocomplete="email"
+                               required maxlength="100"
+                               placeholder="name@example.com">
+                        <small id="error-enquiry-email"
+                               class="field-error"
+                               data-error-for="enquiry-email"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="enquiry-phone">
+                            Phone number (optional)
+                        </label>
+                        <input id="enquiry-phone" name="phone"
+                               type="tel" autocomplete="tel"
+                               pattern="[+0-9 ()-]{9,18}"
+                               placeholder="e.g. 071 234 5678">
+                        <small id="error-enquiry-phone"
+                               class="field-error"
+                               data-error-for="enquiry-phone"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="enquiry-product">Bracelet *</label>
+                        <select id="enquiry-product" name="product"
+                                required>
+                            <option value="">Choose a bracelet</option>
+                            <option>Classic Skull Bracelet</option>
+                            <option>Black Skull Bracelet</option>
+                            <option>Beaded Skull Bracelet</option>
+                            <option>Premium Skull Bracelet</option>
+                        </select>
+                        <small id="error-enquiry-product"
+                               class="field-error"
+                               data-error-for="enquiry-product"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="enquiry-quantity">Quantity *</label>
+                        <input id="enquiry-quantity" name="quantity"
+                               type="number" min="1" max="20"
+                               step="1" value="1" required>
+                        <small id="error-enquiry-quantity"
+                               class="field-error"
+                               data-error-for="enquiry-quantity"></small>
+                    </div>
+
+                    <p id="enquiry-estimate" class="estimate"
+                       aria-live="polite">
+                        Select a product for an estimated total.
+                    </p>
+
+                    <div class="field">
+                        <label for="enquiry-reason">
+                            What would you like to ask? *
+                        </label>
+
+                        <select id="enquiry-reason" name="enquiry-type"
+                                required>
+                            <option value="">Select a topic</option>
+                            <option value="availability">Availability</option>
+                            <option value="price">Final price or delivery</option>
+                            <option value="custom">Bulk or custom request</option>
+                            <option value="other">Other product question</option>
+                        </select>
+
+                        <small id="error-enquiry-reason"
+                               class="field-error"
+                               data-error-for="enquiry-reason"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="enquiry-message">
+                            Enquiry details *
+                        </label>
+
+                        <textarea id="enquiry-message" name="message"
+                                  rows="5" required
+                                  minlength="10" maxlength="1000"
+                                  placeholder="Tell us what you would like to know..."></textarea>
+
+                        <small id="error-enquiry-message"
+                               class="field-error"
+                               data-error-for="enquiry-message"></small>
+                    </div>
+
+                    <div class="field">
+                        <label class="checkbox-row"
+                               for="enquiry-consent">
+                            <input id="enquiry-consent" name="consent"
+                                   type="checkbox" value="yes" required>
+                            <span>
+                                I agree to be contacted about this enquiry. *
+                            </span>
+                        </label>
+                        <small id="error-enquiry-consent"
+                               class="field-error"
+                               data-error-for="enquiry-consent"></small>
+                    </div>
+
+                    <button class="btn" type="submit">
+                        Send product enquiry
+                    </button>
+
+                    <p class="form-status" role="status"
+                       aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Skull Bracelets | WEDE5020 student website project</p>
+        <p>
+            <a href="services.html">Products</a> ·
+            <a href="enquiry.html">Product enquiries</a> ·
+            <a href="contact.html">General contact</a>
+        </p>
+        <p class="small-note">
+            Business details and stock are illustrative until
+            verified with the owner.
+        </p>
+    </footer>
+
+    <script defer src="JS/script.js"></script>
+</body>
+</html>

@@ -1,105 +1,136 @@
-# gallery.html
-
-```html
 <!DOCTYPE html>
-<html>
-
+<html lang="en-ZA">
 <head>
-    <title>Skull Bracelets | Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Skull Bracelets | Gallery of Bracelet Designs</title>
+    <meta name="description" content="View four skull bracelet designs in a responsive photo gallery with a JavaScript lightbox for close-up images.">
+    <meta name="keywords" content="skull bracelet gallery, skull bracelet photographs, beaded skull bracelet images">
+    <meta name="robots" content="index,follow">
+
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">
+                💀 Skull <span>Bracelets</span>
+            </a>
 
-        <h1>Skull Bracelet Gallery</h1>
-        <p>Explore Our Collection</p>
+            <button class="menu-toggle" id="menu-toggle"
+                    type="button" aria-controls="site-nav"
+                    aria-expanded="false">Menu ☰</button>
 
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="services.html">Bracelets</a> |
-            <a href="gallery.html">Gallery</a> |
-            <a href="about.html">About Us</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-
+            <nav class="site-nav" id="site-nav"
+                 aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Bracelets</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enquiry.html">Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-
-        <h2>Our Gallery</h2>
-
-        <p>
-            Take a look at some of the skull bracelet designs available
-            in our collection.
-        </p>
-
-        <section>
-
-            <h3>Classic Skull Bracelet</h3>
-
-            <img src="images/classic skull bracelet.jpg"
-                 alt="Classic skull bracelet"
-                 width="250">
-
-            <p>
-                A simple skull bracelet suitable for everyday wear.
+    <main id="main">
+        <section class="page-intro">
+            <p class="eyebrow">Photo gallery</p>
+            <h1>Get a closer look</h1>
+            <p class="lead">
+                Select a photo to enlarge it. Press Escape or
+                the Close button to return to the gallery.
             </p>
-
         </section>
 
-        <section>
+        <section class="section">
+            <div class="grid two">
+                <button class="gallery-item reveal" type="button"
+                        data-image="images/classic-skull-bracelet.jpg"
+                        data-caption="Classic Skull Bracelet">
+                    <img src="c:\Users\Letlhogonolo\OneDrive\Pictures\classic skull bracelet.jpg"
+                         alt="Classic skull bracelet with a simple design"
+                         width="450" height="450" loading="lazy">
+                    <strong>Classic Skull Bracelet</strong>
+                    <span class="muted">Tap for a larger view</span>
+                </button>
 
-            <h3>Black Skull Bracelet</h3>
+                <button class="gallery-item reveal" type="button"
+                        data-image="images/black-skull-bracelet.jpg"
+                        data-caption="Black Skull Bracelet">
+                    <img src="c:\Users\Letlhogonolo\OneDrive\Pictures\images.jpg"
+                         alt="Black skull bracelet in a bold dark design"
+                         width="450" height="450" loading="lazy">
+                    <strong>Black Skull Bracelet</strong>
+                    <span class="muted">Tap for a larger view</span>
+                </button>
 
-            <img src="images/black skull bracelet.jpg"
-                 alt="Black skull bracelet"
-                 width="250">
+                <button class="gallery-item reveal" type="button"
+                        data-image="images/beaded-skull-bracelet.jpg"
+                        data-caption="Beaded Skull Bracelet">
+                    <img src="c:\Users\Letlhogonolo\OneDrive\Pictures\imbeaded skull bracelet.jpg"
+                         alt="Beaded skull bracelet with decorative central skull detail"
+                         width="450" height="450" loading="lazy">
+                    <strong>Beaded Skull Bracelet</strong>
+                    <span class="muted">Tap for a larger view</span>
+                </button>
 
-            <p>
-                A dark bracelet design for customers who prefer a bold style.
-            </p>
-
+                <button class="gallery-item reveal" type="button"
+                        data-image="images/premium-skull-bracelet.jpg"
+                        data-caption="Premium Skull Bracelet">
+                    <img src="c:\Users\Letlhogonolo\OneDrive\Pictures\Premium skull bracelet.jpg"
+                         alt="Premium skull bracelet shown in a close-up photograph"
+                         width="450" height="450" loading="lazy">
+                    <strong>Premium Skull Bracelet</strong>
+                    <span class="muted">Tap for a larger view</span>
+                </button>
+            </div>
         </section>
 
-        <section>
+        <dialog id="gallery-lightbox" class="lightbox"
+                aria-label="Enlarged bracelet photograph">
+            <button type="button" id="close-lightbox"
+                    class="close" aria-label="Close enlarged image">
+                Close ✕
+            </button>
 
-            <h3>Beaded Skull Bracelet</h3>
+            <img id="lightbox-image"
+                 src="images/classic-skull-bracelet.jpg"
+                 alt="Enlarged bracelet photograph"
+                 width="650" height="500">
 
-            <img src="images/imbeaded skull bracelet.jpg"
-                 alt="Beaded skull bracelet"
-                 width="250">
+            <p id="lightbox-caption"></p>
+        </dialog>
 
+        <section class="section panel">
             <p>
-                A beaded bracelet with a skull centrepiece.
+                Like a design?
+                <a href="enquiry.html">
+                    Ask about its price and availability.
+                </a>
             </p>
-
         </section>
-
-        <section>
-
-            <h3>Premium Skull Bracelet</h3>
-
-            <img src="images/Premium skull bracelet.jpg"
-                 alt="Premium skull bracelet"
-                 width="250">
-
-            <p>
-                A detailed bracelet designed for a premium appearance.
-            </p>
-
-        </section>
-
     </main>
 
-    <footer>
-
-        <p>&copy; 2026 Skull Bracelets. All Rights Reserved.</p>
-
+    <footer class="site-footer">
+        <p>© 2026 Skull Bracelets | WEDE5020 student website project</p>
+        <p>
+            <a href="services.html">Products</a> ·
+            <a href="enquiry.html">Product enquiries</a> ·
+            <a href="contact.html">General contact</a>
+        </p>
+        <p class="small-note">
+            Business details and stock are illustrative until
+            verified with the owner.
+        </p>
     </footer>
 
+    <script defer src="JS/script.js"></script>
 </body>
-
 </html>
-```

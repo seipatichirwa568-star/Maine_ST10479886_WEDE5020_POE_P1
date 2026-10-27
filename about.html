@@ -1,94 +1,168 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en-ZA">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Skull Bracelets | About Us</title>
+    <title>About Skull Bracelets | Johannesburg Accessory Concept</title>
+    <meta name="description" content="Learn about Skull Bracelets, its alternative jewellery concept, mission, vision, values and illustrative Johannesburg service area.">
+    <meta name="keywords" content="about Skull Bracelets, Johannesburg accessories, alternative fashion South Africa">
+    <meta name="robots" content="index,follow">
+
     <link rel="stylesheet" href="CSS/style.css">
-
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">
+                💀 Skull <span>Bracelets</span>
+            </a>
 
-        <h1>💀 About Skull Bracelets</h1>
+            <button class="menu-toggle" id="menu-toggle"
+                    type="button" aria-controls="site-nav"
+                    aria-expanded="false">Menu ☰</button>
 
-        <p>Learn More About Our Organisation</p>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Bracelets</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
+            <nav class="site-nav" id="site-nav"
+                 aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Bracelets</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="enquiry.html">Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
+        <section class="page-intro">
+            <p class="eyebrow">About the brand</p>
+            <h1>Creative accessories with character</h1>
 
-        <div class="about-box">
+            <p class="lead content-width">
+                Skull Bracelets is a student website concept for a
+                small accessory business offering skull-inspired
+                bracelet designs.
+            </p>
+        </section>
 
-            <h2>Who We Are</h2>
+        <section class="section grid two">
+            <article class="card reveal">
+                <h2>Our mission</h2>
+                <p>
+                    To make distinctive bracelet designs easier
+                    to discover and enquire about.
+                </p>
+            </article>
 
-            <p>
-                Skull Bracelets is a small organisation focused on selling
-                stylish and affordable skull-themed bracelets. Our products
-                are designed for people who want accessories that are
-                different from ordinary jewellery.
+            <article class="card reveal">
+                <h2>Our vision</h2>
+                <p>
+                    To build a recognisable accessory brand that
+                    values creativity, quality and clear customer
+                    communication.
+                </p>
+            </article>
+
+            <article class="card reveal">
+                <h2>Our values</h2>
+                <p>
+                    Creativity, customer service, honest product
+                    information, affordability and respect.
+                </p>
+            </article>
+
+            <article class="card reveal">
+                <h2>Our approach</h2>
+                <p>
+                    We encourage customers to browse product details,
+                    see photographs and request confirmation before
+                    making purchases.
+                </p>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>Frequently asked questions</h2>
+
+            <div class="faq">
+                <details>
+                    <summary>
+                        Can I buy a bracelet directly on this website?
+                    </summary>
+                    <p>
+                        Not yet. This is a product-showcase and
+                        enquiry website, not an online checkout.
+                        Use the <a href="enquiry.html">enquiry form</a>
+                        to ask about products.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Are bracelet prices final?</summary>
+                    <p>
+                        The displayed prices are those listed in
+                        the original project. Stock, final pricing
+                        and delivery costs must be confirmed.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Can I ask about bulk orders?</summary>
+                    <p>
+                        Yes. Choose "Bulk or custom request" on
+                        the enquiry form and describe what you need.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Illustrative Johannesburg area map</h2>
+
+            <p class="muted">
+                The original project mentions Johannesburg, but
+                does not provide a verified physical store address.
+                The map illustrates the city centre, not an actual
+                store or collection point.
             </p>
 
-        </div>
+            <div id="location-map" class="map-frame"
+                 role="region"
+                 aria-label="Interactive OpenStreetMap map of Johannesburg city centre">
+            </div>
 
-        <div class="about-box">
-
-            <h2>Our Mission</h2>
-
-            <p>
-                Our mission is to provide customers with unique accessories
-                that allow them to express their personality and individual
-                style while keeping our products affordable.
+            <p class="small-note">
+                <a href="https://www.openstreetmap.org/#map=11/-26.2041/28.0473"
+                   target="_blank" rel="noopener noreferrer">
+                    View Johannesburg on OpenStreetMap
+                </a>
             </p>
-
-        </div>
-
-        <div class="about-box">
-
-            <h2>Our Vision</h2>
-
-            <p>
-                Our vision is to become a recognised bracelet brand known
-                for creative designs, good quality products and excellent
-                customer service.
-            </p>
-
-        </div>
-
-        <div class="about-box">
-
-            <h2>Our Values</h2>
-
-            <ul>
-                <li>Creativity</li>
-                <li>Quality</li>
-                <li>Affordability</li>
-                <li>Customer satisfaction</li>
-                <li>Honesty</li>
-            </ul>
-
-        </div>
-
+        </section>
     </main>
 
-    <footer>
-
-        <p>&copy; 2026 Skull Bracelets. All Rights Reserved.</p>
-
+    <footer class="site-footer">
+        <p>© 2026 Skull Bracelets | WEDE5020 student website project</p>
+        <p>
+            <a href="services.html">Products</a> ·
+            <a href="enquiry.html">Product enquiries</a> ·
+            <a href="contact.html">General contact</a>
+        </p>
+        <p class="small-note">
+            Business details and stock are illustrative until
+            verified with the owner.
+        </p>
     </footer>
 
+    <script defer
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script defer src="JS/script.js"></script>
 </body>
-
 </html>
-```

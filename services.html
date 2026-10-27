@@ -1,111 +1,139 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en-ZA">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Skull Bracelets | Bracelets</title>
+    <title>Skull Bracelets | Bracelet Collection and Prices</title>
+    <meta name="description" content="Explore and compare Classic, Black, Beaded and Premium skull bracelets. Search, filter and sort the collection with JavaScript.">
+    <meta name="keywords" content="skull bracelet prices, black skull bracelet, beaded skull bracelet, premium skull bracelet">
+    <meta name="robots" content="index,follow">
+
     <link rel="stylesheet" href="CSS/style.css">
-
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">
+                💀 Skull <span>Bracelets</span>
+            </a>
 
-        <h1>💀 Our Skull Bracelets</h1>
+            <button class="menu-toggle" id="menu-toggle"
+                    type="button" aria-controls="site-nav"
+                    aria-expanded="false">Menu ☰</button>
 
-        <p>Choose Your Style</p>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Bracelets</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
+            <nav class="site-nav" id="site-nav"
+                 aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" aria-current="page">Bracelets</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enquiry.html">Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
+        <section class="page-intro">
+            <p class="eyebrow">Our collection</p>
+            <h1>Find your skull bracelet</h1>
 
-        <h2>Our Collection</h2>
+            <p class="lead content-width">
+                Search by name, filter by style and sort by price.
+                The four products and listed prices come from
+                the original website.
+            </p>
+        </section>
 
-        <div class="products">
+        <section class="section" aria-label="Product filters">
+            <div class="controls">
+                <div class="control">
+                    <label for="product-search">
+                        Search bracelets
+                    </label>
+                    <input id="product-search" type="search"
+                           placeholder="Try black, premium or beaded">
+                </div>
 
-            <div class="product">
+                <div class="control">
+                    <label for="product-category">
+                        Filter by style
+                    </label>
+                    <select id="product-category">
+                        <option value="all">All styles</option>
+                        <option value="everyday">Everyday</option>
+                        <option value="statement">Statement</option>
+                        <option value="beaded">Beaded</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
 
-                <h3>Classic Skull Bracelet</h3>
-
-                <p>
-                    A simple skull bracelet designed for everyday use.
-                </p>
-
-                <p class="price">R120</p>
-
+                <div class="control">
+                    <label for="product-sort">
+                        Sort bracelets
+                    </label>
+                    <select id="product-sort">
+                        <option value="default">Original order</option>
+                        <option value="price-low">Lowest price first</option>
+                        <option value="price-high">Highest price first</option>
+                        <option value="name">Name A to Z</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="product">
+            <p id="product-count" class="status-line"
+               aria-live="polite">
+                Loading bracelets...
+            </p>
 
-                <h3>Black Skull Bracelet</h3>
-
+            <div id="product-grid" class="grid two">
                 <p>
-                    A dark and stylish bracelet designed for a bold appearance.
+                    Enable JavaScript to browse the
+                    interactive collection.
                 </p>
-
-                <p class="price">R150</p>
-
             </div>
 
-            <div class="product">
+            <p class="small-note">
+                Prices in rand (ZAR). Product availability,
+                delivery and final costs require confirmation.
+                No payment is taken on this site.
+            </p>
+        </section>
 
-                <h3>Beaded Skull Bracelet</h3>
+        <section class="section panel reveal">
+            <h2>Other services</h2>
 
-                <p>
-                    A beaded bracelet with a detailed skull centrepiece.
-                </p>
+            <p>
+                Visitors can ask about custom designs,
+                gift packaging or bulk orders. These are enquiry
+                options, not confirmed promises of availability.
+            </p>
 
-                <p class="price">R140</p>
-
-            </div>
-
-            <div class="product">
-
-                <h3>Premium Skull Bracelet</h3>
-
-                <p>
-                    A detailed bracelet designed for a premium appearance.
-                </p>
-
-                <p class="price">R200</p>
-
-            </div>
-
-        </div>
-
-        <div class="services">
-
-            <h2>Our Services</h2>
-
-            <ul>
-                <li>Bracelet sales</li>
-                <li>Custom bracelet requests</li>
-                <li>Gift packaging</li>
-                <li>Bulk orders</li>
-                <li>Customer support</li>
-            </ul>
-
-        </div>
-
+            <a class="btn" href="enquiry.html">
+                Request more information
+            </a>
+        </section>
     </main>
 
-    <footer>
-
-        <p>&copy; 2026 Skull Bracelets. All Rights Reserved.</p>
-
+    <footer class="site-footer">
+        <p>© 2026 Skull Bracelets | WEDE5020 student website project</p>
+        <p>
+            <a href="services.html">Products</a> ·
+            <a href="enquiry.html">Product enquiries</a> ·
+            <a href="contact.html">General contact</a>
+        </p>
+        <p class="small-note">
+            Business details and stock are illustrative until
+            verified with the owner.
+        </p>
     </footer>
 
+    <script defer src="JS/script.js"></script>
 </body>
-
 </html>
-```
