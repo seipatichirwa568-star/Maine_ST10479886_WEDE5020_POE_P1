@@ -1,143 +1,398 @@
-Skull Bracelets Website
-Student Number: ST10479886
+# Skull Bracelets | WEDE5020 Part 3 Portfolio of Evidence
 
-Project: Skull Bracelets Website
+**Student:** Netefatso Maine  
+**Student Number:** ST10479886  
+**Institution:** Rosebank College  
+**Module:** Web Development (Introduction) – WEDE5020  
+**Project:** Skull Bracelets Website  
+**Year:** 2026  
+**Development Tool:** Visual Studio Code  
+**GitHub Repository:** https://github.com/seipatichirwa568-star/Maine_ST10479886_WEDE5020_POE_P1  
+**Branch:** master  
+**Published Website:** [Insert the client's actual Netlify link after deployment]
 
-Development Tool: Visual Studio Code
+---
 
-Languages Used: HTML5 and CSS3
+## 1. Project Overview
 
-Year: 2026
+Skull Bracelets is a website project for a small accessories business concept that focuses on skull-inspired bracelets.
 
-1. Project Overview
-The Skull Bracelets website is a small e-commerce style website created for an organisation that sells skull-themed bracelets and accessories.
+The website allows visitors to learn about the business, view different bracelet designs, compare listed prices and enquire about products.
 
-The purpose of the website is to provide customers with information about the organisation and its products. The website allows visitors to explore different bracelet designs, view a gallery, learn more about the organisation and find contact information.
+In Part 1, I focused on the website structure using HTML. In Part 2, I added external CSS to improve the appearance and responsiveness.
 
-The website was initially developed using HTML5, with external CSS3 styling added for Part 2 to establish the visual layout, color scheme, and typography. JavaScript was intentionally excluded from this version to focus on core structure, presentation, and navigation.
+For Part 3, I focused on adding JavaScript functionality, improving SEO and making the Contact and Enquiry forms interactive.
 
-2. Organisation Description
-Skull Bracelets is a small accessory organisation that focuses on selling unique skull-inspired bracelets.
+The original bracelet collection contains:
 
-The organisation is aimed at customers who enjoy alternative fashion, bold accessories and products that allow them to express their individual style.
+| Product | Listed Price |
+|---|---:|
+| Classic Skull Bracelet | R120 |
+| Black Skull Bracelet | R150 |
+| Beaded Skull Bracelet | R140 |
+| Premium Skull Bracelet | R200 |
 
-The website provides customers with a simple way to view available products and learn more about the organisation.
+The prices are based on the original project. Product availability and final costs need to be confirmed.
 
-3. Aim of the Website
-The main aim of the website is to create an attractive and easy-to-use online platform where customers can:
+## 2. Website Objectives
 
-Learn about Skull Bracelets.
+The objectives of my website are to:
 
-View available bracelet products.
+- Provide information about Skull Bracelets.
+- Display bracelet products and their prices.
+- Allow customers to search and sort products.
+- Display larger product photographs through a lightbox.
+- Let customers enquire about products and quantities.
+- Provide a separate form for general contact messages.
+- Make the website responsive on desktop and mobile devices.
+- Improve the website's SEO and accessibility.
 
-Browse different bracelet designs.
+## 3. Website Pages
 
-View product images in the gallery.
+The updated website contains six main pages.
 
-Learn about the organisation.
+| Page | Description |
+|---|---|
+| `index.html` | Introduces the business and featured products. |
+| `services.html` | Displays the bracelet collection with JavaScript search, filtering and sorting. |
+| `gallery.html` | Displays bracelet photographs using an interactive lightbox. |
+| `about.html` | Explains the organisation's mission, vision and values, and includes an FAQ and map. |
+| `enquiry.html` | Allows customers to enquire about products, quantities and estimated costs. |
+| `contact.html` | Allows customers to send general messages using a validated form. |
 
-Contact the organisation.
+## 4. Part 2 Results and Lecturer Feedback
 
-Find information about prices and services.
+My Part 2 assessment result was **75/100**.
 
-4. Website Objectives
-The objectives of the website are to:
+The feedback showed that the website had a working external stylesheet, but several areas needed improvement, including responsive navigation, documentation and referencing.
 
-Create a professional online presence for Skull Bracelets.
+### 4.1 External CSS
 
-Display different skull bracelet products.
+**Mark: 10/10**
 
-Provide customers with clear product information.
+The lecturer confirmed that the external stylesheet was correctly implemented across the website.
 
-Create an image gallery for the bracelet collection.
+I retained the external stylesheet in Part 3 to keep the design consistent.
 
-Provide contact information for customers.
+### 4.2 Default CSS Styling
 
-Make the website simple and easy to navigate.
+**Mark: 4/5**
 
-Use HTML to create the structure of the website.
+The feedback indicated that the basic styles were present but could be improved.
 
-Use CSS to improve the appearance and presentation of the website.
+For Part 3, I organised the shared styles for buttons, sections, product cards and forms to improve consistency.
 
-5. Part 1 Evaluation & Feedback Integration
-Part 1 of the project proposal was formally assessed and received exceptional results across all criteria, reflecting thorough planning and execution:
+### 4.3 Typography
 
-Goals and Objectives: Achieved top marks (3/3). Grader noted: "Goals and objectives are clear, detailed, and well-aligned with the project. Excellent work..."
+**Mark: 4/5**
 
-Current Analysis: Achieved top marks (3/3). Grader noted: "Analysis is thorough and insightful."
+The lecturer indicated that text styles were present but had some inconsistencies.
 
-Proposed Features and Functionality: Achieved top marks (3/3). Grader noted: "Proposed features and functionality are comprehensive and well-detailed."
+I improved the heading sizes, paragraph spacing and text hierarchy. I also used flexible heading sizes to improve readability on smaller screens.
 
-Design Aesthetic: Achieved top marks (2/2). Grader noted: "Design aesthetic is clear and well-defined."
+### 4.4 Layout Structure
 
-Wireframes: Achieved top marks (2/2). Grader noted: "Wireframes are complete and well-detailed."
+**Mark: 4/5**
 
-Technical Requirements: Achieved top marks (2/2). Grader noted: "Technical requirements are clear and well-defined. Excellent work..."
+The lecturer indicated that some elements needed better alignment and spacing.
 
-These strong foundational elements guided the direct implementation of Part 2.
+I improved the layout by using CSS Grid and Flexbox. I also applied consistent padding, margins and content widths throughout the website.
 
-6. Part 2 CSS Implementation & Design Features
-For Part 2, an external stylesheet (style.css) was integrated across all pages to bring the design aesthetic to life.
+### 4.5 Decoration and Colour
 
-Thematic Color Palette: Uses a dark theme incorporating black, dark grey, and white, contrasted with striking red accents for headings, borders, and active states.
+**Mark: 4/5**
 
-Navigation & Pseudo-classes: Implements interactive pseudo-classes (such as nav a:hover) to give visual feedback when users hover over menu items or buttons.
+The lecturer indicated that the colours and decorative styles were present but could be more consistent.
 
-Component Styling: Organizes products into structured visual cards with clean borders and consistent spacing.
+I maintained the black, grey and red theme while improving the styling of cards, borders and interactive elements.
 
-Responsive Layouts: Employs CSS layout properties to ensure the gallery, product cards, and forms adapt cleanly across different screen sizes.
+### 4.6 CSS Pseudo-Classes
 
-7. Website Pages
-The website consists of five main pages:
+**Mark: 7/10**
 
-Home Page (index.html): Main landing page introducing the brand and highlighting reasons to choose Skull Bracelets.
+The lecturer indicated that the pseudo-classes worked but could be improved.
 
-Bracelets Page (services.html): Showcases products like the Classic, Black, Beaded, and Premium Skull Bracelets alongside pricing and service information.
+I added clearer hover and focus effects to buttons, links and navigation elements to give visitors better visual feedback.
 
-Gallery Page (gallery.html): Visual display of bracelet designs.
+### 4.7 Responsive Media Queries
 
-About Us Page (about.html): Details the organisation's mission, vision, and core values.
+**Mark: 7/10**
 
-Contact Page (contact.html): Displays business hours, contact channels, and a structured front-end inquiry form.
+The lecturer indicated that responsive breakpoints were present but needed improvement.
 
-8. Technologies Used
-HTML5: Used to structure page content, semantic tags, tables, and forms (Mozilla, 2025; W3C, 2026).
+I improved the mobile and tablet media queries to make the website adapt more consistently to different screen sizes.
 
-CSS3: Used for visual presentation, dark theme styling, card layouts, and hover effects (MDN Web Docs, 2025).
+### 4.8 Responsive Layout and Typography
 
-Visual Studio Code: Primary integrated development environment used for file management and testing (Microsoft, 2026).
+**Marks: 4/5 each**
 
-9. Folder Structure
-Plaintext
-Skull-Bracelet-Website
-│
+The lecturer identified minor issues with layout and typography on smaller screens.
+
+I improved the responsive grid layouts, spacing and heading sizes.
+
+### 4.9 Mobile Navigation
+
+**Mark: 2/5**
+
+This was one of the main areas requiring improvement.
+
+The lecturer indicated that the navigation menu did not adapt correctly on mobile devices.
+
+To address this in Part 3, I introduced a mobile navigation button controlled by JavaScript. The menu opens and closes when the button is clicked.
+
+### 4.10 Responsive Images
+
+**Mark: 4/5**
+
+The lecturer indicated that the images adapted mostly correctly but still required improvement.
+
+I used relative image paths, responsive sizing and descriptive alternative text. I also improved the gallery layout so that images can adapt to smaller screens.
+
+### 4.11 GitHub Commits
+
+**Mark: 4/5**
+
+The lecturer indicated that commits were present but lacked detail.
+
+For Part 3, I am using descriptive commit messages to explain the purpose of changes. The GitHub commit history provides the record of when those changes were actually made.
+
+### 4.12 README Documentation
+
+**Mark: 4/5**
+
+The lecturer indicated that the README was present but could be improved.
+
+I expanded the README to include the new JavaScript functionality, the feedback corrections, testing instructions, SEO improvements and a detailed changelog.
+
+### 4.13 References
+
+**Mark: 2/5**
+
+The lecturer indicated that the references were incomplete or incorrectly formatted.
+
+I improved the reference list by using a consistent author-date format and adding in-text citations for the main technologies and resources.
+
+## 5. Technologies Used
+
+### HTML5
+
+HTML5 was used to structure the website using elements such as headings, navigation menus, sections, forms and footers (MDN Web Docs, s.a.-a).
+
+### CSS3
+
+CSS was used to improve the appearance of the website, including colours, spacing, layout and responsive design (MDN Web Docs, s.a.-b).
+
+### JavaScript
+
+JavaScript was used to add functionality such as interactive navigation, product searching, gallery lightboxes, estimated costs and form validation (MDN Web Docs, s.a.-c).
+
+### Leaflet and OpenStreetMap
+
+Leaflet and OpenStreetMap were used to demonstrate an interactive map centred on Johannesburg. This is an illustrative map and does not represent a confirmed Skull Bracelets shop address (Leaflet, s.a.; OpenStreetMap contributors, s.a.).
+
+### GitHub
+
+GitHub was used to store the project files and maintain a development history.
+
+### Netlify
+
+Netlify is used to publish the website and can receive messages through its Forms feature (Netlify, s.a.).
+
+## 6. JavaScript Functionality
+
+### 6.1 Mobile Navigation
+
+A mobile menu button was added to allow visitors to open and close the navigation on smaller screens.
+
+The JavaScript uses `addEventListener()` and changes the menu's visibility when the visitor clicks the button.
+
+### 6.2 Dynamic Product Listings
+
+The bracelet products are stored in a JavaScript array.
+
+The script creates product cards dynamically and displays their names, prices, descriptions and photographs.
+
+### 6.3 Search and Sorting
+
+Visitors can search for bracelets, filter products by category and sort them according to name or price.
+
+This was implemented using JavaScript functions, arrays and DOM manipulation.
+
+### 6.4 Gallery Lightbox
+
+The Gallery page uses JavaScript to enlarge product photographs when clicked.
+
+The lightbox allows visitors to see the products more clearly and close the enlarged image when finished.
+
+### 6.5 Interactive Map
+
+The About page contains an interactive Leaflet map that allows visitors to zoom and explore an illustrative Johannesburg area.
+
+### 6.6 Product Enquiry Cost
+
+The Enquiry page allows a visitor to choose a bracelet and quantity.
+
+JavaScript calculates the estimated product total.
+
+For example, two Black Skull Bracelets at R150 each produce an estimated cost of R300.
+
+The final cost and availability still need confirmation.
+
+## 7. JavaScript Form Validation
+
+For the Contact and Enquiry forms, I applied validation techniques covered in the WEDE5020 JavaScript Form Validation lecture material (The IIE, 2026).
+
+These include:
+
+- `addEventListener()` to handle user actions.
+- `.value.trim()` to read and clean input.
+- `if` and `else` statements to check conditions.
+- `checkValidity()` to check HTML validation rules.
+- `isValid` to record whether the form passes validation.
+- `showError()` to display errors.
+- `clearError()` to remove errors after corrections.
+- `event.preventDefault()` to prevent unwanted submissions.
+
+The forms check required fields, email addresses and other input rules before allowing submission.
+
+Error messages appear underneath invalid fields so that visitors can correct their information.
+
+The forms also use AJAX through `fetch()`, allowing valid information to be submitted without reloading the page (MDN Web Docs, s.a.-d).
+
+Client-side validation improves usability, but it does not replace server-side validation.
+
+## 8. Search Engine Optimisation
+
+SEO was improved using:
+
+- Unique page titles.
+- Relevant meta descriptions.
+- Descriptive headings.
+- Relevant keywords.
+- Internal navigation links.
+- Descriptive image filenames and alt text.
+- Mobile-responsive layouts.
+- `robots.txt`.
+- `sitemap.xml`.
+
+These features help search engines discover and understand the website content (Google Search Central, s.a.).
+
+SEO does not guarantee a particular Google ranking.
+
+## 9. Changelog
+
+This section records the Part 3 improvements and explains why they were made.
+
+| Development period | File or feature | Changes and reasons |
+|---|---|---|
+| October 2026 | CSS and layout | Improved spacing, typography, colours and responsive layouts following Part 2 feedback. |
+| October 2026 | Mobile navigation | Added JavaScript-controlled navigation to address mobile menu problems. |
+| October 2026 | `services.html` and `script.js` | Added dynamic bracelet cards, searching, filtering and sorting. |
+| October 2026 | Gallery | Added the interactive lightbox and improved image paths. |
+| October 2026 | About page | Added an FAQ accordion and interactive map. |
+| October 2026 | Enquiry form | Added product selection, quantity controls and estimated cost calculation. |
+| October 2026 | Contact form | Added a separate general-message form and JavaScript validation. |
+| October 2026 | SEO files | Added `robots.txt` and `sitemap.xml`. |
+| 27 October 2026 | README | Expanded the lecturer feedback corrections, changelog, references and testing documentation. |
+
+These are development summaries. The actual dates and history of individual commits should be checked in GitHub.
+
+## 10. Project File Structure
+
+```text
+Skull_Bracelets/
 ├── index.html
+├── about.html
 ├── services.html
 ├── gallery.html
-├── about.html
+├── enquiry.html
 ├── contact.html
-├── style.css
-│
-└── images
-    ├── classic-skull.jpg
-    ├── black-skull.jpg
-    ├── beaded-skull.jpg
-    └── premium-skull.jpg
-10. Limitations & Future Improvements
-Current Limitations: JavaScript functionality, database connectivity, automated backend form processing, and secure online payment processing are excluded from this release.
+├── CSS/
+│   └── style.css
+├── JS/
+│   └── script.js
+├── images/
+│   ├── classic-skull-bracelet.jpg
+│   ├── black-skull-bracelet.jpg
+│   ├── beaded-skull-bracelet.jpg
+│   └── premium-skull-bracelet.jpg
+├── robots.txt
+├── sitemap.xml
+├── _headers
+└── README.md
+```
 
-Future Roadmap: Future updates will introduce interactive shopping carts, user authentication, live database integration, and extended product filtering.
+File and folder names must match the paths used in the HTML.
 
-11. Conclusion
-The Skull Bracelets website successfully transitions from its high-scoring Part 1 proposal into a fully styled, cohesive multi-page web application using HTML5 and CSS3.
+## 11. Testing Checklist
 
-References
-Microsoft (2026) Visual Studio Code documentation. Available at: https://code.visualstudio.com/docs (Accessed: 14 August 2026).
+The following features must be tested on the final published website:
 
-Mozilla Developer Network (MDN) (2025) HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 14 August 2026).
+- [ ] All six webpages open.
+- [ ] Navigation links work.
+- [ ] The mobile menu opens and closes.
+- [ ] All product photographs display.
+- [ ] Product search and sorting work.
+- [ ] Gallery images enlarge and close.
+- [ ] The interactive map loads.
+- [ ] Enquiry estimates calculate correctly.
+- [ ] Invalid form inputs display error messages.
+- [ ] Valid Contact and Enquiry forms submit successfully.
+- [ ] Both forms appear under Netlify Verified submissions.
+- [ ] `robots.txt` and `sitemap.xml` contain the correct live website address.
+- [ ] The business owner has approved the contact details and image usage.
+- [ ] GitHub and Netlify links are included in the final submission.
 
-Mozilla Developer Network (MDN) (2025) CSS: Cascading Style Sheets. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 14 August 2026).
+## 12. Deployment
 
-World Wide Web Consortium (W3C) (2026) HTML Standard. Available at: https://html.spec.whatwg.org/ (Accessed: 14 August 2026).
+The website is intended to be hosted on Netlify and maintained through its GitHub repository.
 
-IIE Rosebank College (2026) IIE Rosebank College. Available at: https://www.rosebankcollege.co.za/ (Accessed: 14 August 2026).
+**GitHub:** https://github.com/seipatichirwa568-star/Maine_ST10479886_WEDE5020_POE_P1
+
+**Netlify:** [Insert actual website link]
+
+The lecturer can access the source files through the `master` branch if that is the final submission branch.
+
+## 13. Limitations and Future Improvements
+
+The current website does not process online payments or maintain a live stock database.
+
+Bracelet prices are taken from the original project and require confirmation.
+
+The interactive map does not represent a verified physical store.
+
+Future improvements could include a real stock management system, updated product photography and online ordering, subject to the business owner's requirements.
+
+## 14. Conclusion
+
+Part 3 expands the original Skull Bracelets website by improving its appearance and adding interactive functionality.
+
+I focused on addressing the Part 2 lecturer feedback, particularly mobile navigation, responsive layouts, documentation and references.
+
+The project now includes JavaScript-based product searching, a gallery lightbox, an interactive map, cost estimates and validated forms.
+
+The remaining requirement is to confirm that the features work on the published website and that the final GitHub and Netlify links are correct.
+
+## 15. References
+
+Google Search Central. s.a. *SEO Starter Guide*. [Online]. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide [Accessed 27 October 2026].
+
+Leaflet. s.a. *Leaflet API Reference*. [Online]. Available at: https://leafletjs.com/reference.html [Accessed 27 October 2026].
+
+MDN Web Docs. s.a.-a. *HTML: HyperText Markup Language*. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML [Accessed 27 October 2026].
+
+MDN Web Docs. s.a.-b. *CSS: Cascading Style Sheets*. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 27 October 2026].
+
+MDN Web Docs. s.a.-c. *JavaScript*. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript [Accessed 27 October 2026].
+
+MDN Web Docs. s.a.-d. *Using the Fetch API*. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch [Accessed 27 October 2026].
+
+MDN Web Docs. s.a.-e. *Client-side form validation*. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation [Accessed 27 October 2026].
+
+Netlify. s.a. *Forms setup*. [Online]. Available at: https://docs.netlify.com/manage/forms/setup/ [Accessed 27 October 2026].
+
+OpenStreetMap contributors. s.a. *OpenStreetMap*. [Online]. Available at: https://www.openstreetmap.org/ [Accessed 27 October 2026].
+
+The Independent Institute of Education (The IIE). 2026. *WEDE5020 JavaScript Form Validation*. [Lecture slides].
+
+The Independent Institute of Education (The IIE). 2026. *Formative 2 Part 2 Marking Rubric: WEDE5020, Netefatso Maine*. [Unpublished assessment feedback].
