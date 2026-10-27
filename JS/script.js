@@ -44,37 +44,37 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // 3. Product data from the original website
-  const products = [
+  
+const products = [
     {
-      name: "Classic Skull Bracelet",
-      price: 120,
-      category: "everyday",
-      image: "images/classic-skull-bracelet.jpg",
-      description: "Simple skull-inspired bracelet for everyday style."
+        name: "Classic Skull Bracelet",
+        price: 120,
+        category: "everyday",
+        image: "images/classic skull bracelet.jpg",
+        description: "Simple skull-inspired bracelet for everyday style."
     },
     {
-      name: "Black Skull Bracelet",
-      price: 150,
-      category: "statement",
-      image: "images/black-skull-bracelet.jpg",
-      description: "Dark bracelet with a bold alternative-fashion look."
+        name: "Black Skull Bracelet",
+        price: 150,
+        category: "statement",
+        image: "images/black skull bracelet.jpg",
+        description: "Dark bracelet with a bold alternative-fashion look."
     },
     {
-      name: "Beaded Skull Bracelet",
-      price: 140,
-      category: "beaded",
-      image: "images/beaded-skull-bracelet.jpg",
-      description: "Beaded design with a detailed skull centrepiece."
+        name: "Beaded Skull Bracelet",
+        price: 140,
+        category: "beaded",
+        image: "images/imbeaded skull bracelet.jpg",
+        description: "Beaded design with a detailed skull centrepiece."
     },
     {
-      name: "Premium Skull Bracelet",
-      price: 200,
-      category: "premium",
-      image: "images/premium-skull-bracelet.jpg",
-      description: "Detailed skull bracelet with a premium appearance."
+        name: "Premium Skull Bracelet",
+        price: 200,
+        category: "premium",
+        image: "images/Premium skull bracelet.jpg",
+        description: "Detailed skull bracelet with a premium appearance."
     }
-  ];
-
+];
   function money(amount) {
     return "R" + amount.toFixed(2);
   }
