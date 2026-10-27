@@ -9,7 +9,7 @@
 **Development Tool:** Visual Studio Code  
 **GitHub Repository:** https://github.com/seipatichirwa568-star/Maine_ST10479886_WEDE5020_POE_P1  
 **Branch:** master  
-**Published Website:** [Insert the client's actual Netlify link after deployment]
+**Published Website:** [https://bracelet-st10479886.netlify.app]
 
 ---
 
@@ -349,7 +349,7 @@ The website is intended to be hosted on Netlify and maintained through its GitHu
 
 **GitHub:** https://github.com/seipatichirwa568-star/Maine_ST10479886_WEDE5020_POE_P1
 
-**Netlify:** [Insert actual website link]
+**Netlify:** [https://bracelet-st10479886.netlify.app]
 
 The lecturer can access the source files through the `master` branch if that is the final submission branch.
 

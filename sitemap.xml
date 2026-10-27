@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+   
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Homepage -->
     <url>
-        <loc>https://YOUR-SITE.netlify.app/</loc>
+        <loc>https://bracelet-st10479886.netlify.app/</loc>
     </url>
 
+    <!-- About Us -->
     <url>
-        <loc>https://YOUR-SITE.netlify.app/services.html</loc>
+        <loc>https://bracelet-st10479886.netlify.app/about.html</loc>
     </url>
 
+    <!-- Bracelet Collection -->
     <url>
-        <loc>https://YOUR-SITE.netlify.app/gallery.html</loc>
+        <loc>https://bracelet-st10479886.netlify.app/services.html</loc>
     </url>
 
+    <!-- Gallery -->
     <url>
-        <loc>https://YOUR-SITE.netlify.app/about.html</loc>
+        <loc>https://bracelet-st10479886.netlify.app/gallery.html</loc>
     </url>
 
+    <!-- Product Enquiries -->
     <url>
-        <loc>https://YOUR-SITE.netlify.app/enquiry.html</loc>
+        <loc>https://bracelet-st10479886.netlify.app/enquiry.html</loc>
     </url>
 
+    <!-- Contact Us -->
     <url>
-        <loc>https://YOUR-SITE.netlify.app/contact.html</loc>
+        <loc>https://bracelet-st10479886.netlify.app/contact.html</loc>
     </url>
 
 </urlset>
