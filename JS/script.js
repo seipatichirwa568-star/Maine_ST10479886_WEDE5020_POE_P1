@@ -224,7 +224,14 @@ const products = [
   const mapElement = document.getElementById("location-map");
 
   if (mapElement) {
-    if (typeof L !== "undefined") {
+    // A local file cannot provide a website referrer to OSM.
+    // Test the interactive map on the published HTTPS website.
+    if (window.location.protocol === "file:") {
+      mapElement.classList.add("map-fallback");
+      mapElement.textContent =
+        "Open the published website to view the interactive map. " +
+        "Local files cannot provide the website referrer required by OpenStreetMap.";
+    } else if (typeof L !== "undefined") {
       const map = L.map("location-map").setView(
         [-26.2041, 28.0473], 11
       );
@@ -233,6 +240,8 @@ const products = [
         "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
         {
           maxZoom: 18,
+          // OSM requires valid website identification for map tiles.
+          referrerPolicy: "strict-origin-when-cross-origin",
           attribution:
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }
