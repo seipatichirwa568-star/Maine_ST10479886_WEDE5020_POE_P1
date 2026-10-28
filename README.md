@@ -9,7 +9,9 @@
 **Development Tool:** Visual Studio Code  
 **GitHub Repository:** https://github.com/seipatichirwa568-star/Maine_ST10479886_WEDE5020_POE_P1  
 **Branch:** master  
-**Published Website:** [https://bracelet-st10479886.netlify.app]
+**Previously published Netlify website:** https://bracelet-st10479886.netlify.app/  
+**GitHub Pages website (verify after successful deployment):** https://seipatichirwa568-star.github.io/Maine_ST10479886_WEDE5020_POE_P1/  
+**Documentation updated:** 29 October 2026
 
 ---
 
@@ -228,6 +230,10 @@ The lightbox allows visitors to see the products more clearly and close the enla
 
 The About page contains an interactive Leaflet map that allows visitors to zoom and explore an illustrative Johannesburg area.
 
+The OpenStreetMap tile requests now set `referrerPolicy: "strict-origin-when-cross-origin"` in `JS/script.js` so browser requests can include the website origin. Direct `file:///` previews display an explanatory message instead of requesting tiles without a valid website referrer. The interactive map should be checked on the published HTTPS website (Leaflet, s.a.; OpenStreetMap Foundation, 2026).
+
+The map is illustrative only; it is not a verified shop or collection address.
+
 ### 6.6 Product Enquiry Cost
 
 The Enquiry page allows a visitor to choose a bracelet and quantity.
@@ -294,6 +300,8 @@ This section records the Part 3 improvements and explains why they were made.
 | October 2026 | Contact form | Added a separate general-message form and JavaScript validation. |
 | October 2026 | SEO files | Added `robots.txt` and `sitemap.xml`. |
 | 27 October 2026 | README | Expanded the lecturer feedback corrections, changelog, references and testing documentation. |
+| 29 October 2026 | Map | Added an explicit Leaflet referrer policy for OpenStreetMap tiles and a local-file fallback message after 403 blocked map tiles were observed. |
+| 29 October 2026 | README and SEO | Documented GitHub Pages publishing, corrected the picture filename examples and updated the sitemap link in `robots.txt`. |
 
 These are development summaries. The actual dates and history of individual commits should be checked in GitHub.
 
@@ -312,13 +320,12 @@ Skull_Bracelets/
 ├── JS/
 │   └── script.js
 ├── images/
-│   ├── classic-skull-bracelet.jpg
-│   ├── black-skull-bracelet.jpg
-│   ├── beaded-skull-bracelet.jpg
-│   └── premium-skull-bracelet.jpg
+│   ├── classic skull bracelet.jpg
+│   ├── black skull bracelet.jpg
+│   ├── imbeaded skull bracelet.jpg
+│   └── Premium skull bracelet.jpg
 ├── robots.txt
 ├── sitemap.xml
-├── _headers
 └── README.md
 ```
 
@@ -345,13 +352,21 @@ The following features must be tested on the final published website:
 
 ## 12. Deployment
 
-The website is intended to be hosted on Netlify and maintained through its GitHub repository.
+The lecturer allows publication through GitHub Pages. The repository is maintained on the `master` branch and the HTML website can be published from its root folder.
 
-**GitHub:** https://github.com/seipatichirwa568-star/Maine_ST10479886_WEDE5020_POE_P1
+**GitHub repository (source code):** https://github.com/seipatichirwa568-star/Maine_ST10479886_WEDE5020_POE_P1
 
-**Netlify:** [https://bracelet-st10479886.netlify.app]
+**Expected GitHub Pages link:** https://seipatichirwa568-star.github.io/Maine_ST10479886_WEDE5020_POE_P1/
 
-The lecturer can access the source files through the `master` branch if that is the final submission branch.
+**Previously published Netlify link:** https://bracelet-st10479886.netlify.app/
+
+**GitHub Pages setup:** Open the repository, select Settings > Pages, choose Deploy from a branch, select `master` and `/(root)`, and Save. Check the latest build in GitHub Actions; then use **Visit site** to confirm the real public link.
+
+**Website testing:** Test the homepage, bracelet images, Gallery lightbox, search, sorting, and About-page map on the published HTTPS link. The map may not render in `file:///` previews because OpenStreetMap requires website identification.
+
+**Form limitation:** Client-side validation works on GitHub Pages. The existing Netlify Forms submission handler does not deliver real messages from a GitHub Pages URL; delivery requires a supported form processor. Do not claim GitHub Pages submissions are successful without testing.
+
+**SEO:** The sitemap lists the GitHub Pages project URLs. The `robots.txt` file links to that sitemap, but a project-level `robots.txt` is not the site-wide robots policy for the shared `github.io` domain.
 
 ## 13. Limitations and Future Improvements
 
@@ -369,11 +384,16 @@ Part 3 expands the original Skull Bracelets website by improving its appearance 
 
 I focused on addressing the Part 2 lecturer feedback, particularly mobile navigation, responsive layouts, documentation and references.
 
-The project now includes JavaScript-based product searching, a gallery lightbox, an interactive map, cost estimates and validated forms.
+The project now includes JavaScript-based product searching, a gallery lightbox, an illustrative map with improved HTTP referrer handling, cost estimates and client-side validated forms.
 
-The remaining requirement is to confirm that the features work on the published website and that the final GitHub and Netlify links are correct.
+The remaining requirement is to verify the new GitHub Pages link and all features on the published website, including the map and the bracelet photographs.
 
 ## 15. References
+
+GitHub. 2026. *Creating a GitHub Pages site*. [Online]. Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site [Accessed 29 October 2026].
+
+OpenStreetMap Foundation. 2026. *Tile Usage Policy*. [Online]. Available at: https://operations.osmfoundation.org/policies/tiles/ [Accessed 29 October 2026].
+
 
 Google Search Central. s.a. *SEO Starter Guide*. [Online]. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide [Accessed 27 October 2026].
 
