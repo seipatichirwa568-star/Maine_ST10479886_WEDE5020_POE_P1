@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap:https://bracelet-st10479886.netlify.app
+
+Sitemap: https://seipatichirwa568-star.github.io/Maine_ST10479886_WEDE5020_POE_P1/
