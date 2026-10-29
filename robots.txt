@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seipatichirwa568-star.github.io/Maine_ST10479886_WEDE5020_POE_P1/sitemap.xml
+Sitemap: https://seipatichirwa568-star.github.io/Maine_ST10479886_WEDE5020_POE_P1/
